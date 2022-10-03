@@ -1,0 +1,27 @@
+<head>
+  <title><%=@user_name%></title>
+</head>
+
+<body>
+
+  <div id="email-address">
+    <h2><%=@user_name%>'s email address:</h2>
+    <p><%=@email%></p><br>
+  </div>
+
+  <div id="interests">
+    <h2><%=@user_name%>'s interests:</h2>
+    <p><%=@interests%></p>
+  </div>
+
+</body>
+
+<nav id= "links-to-others">
+  <ul>
+    <% @other_names.each do |user|%>
+      <li>
+        <a href = "/<%=user%>"%><%=user%></a>
+      </li>
+    <%end%>
+  </ul>
+</nav>

@@ -17,3 +17,15 @@
   - politics
   - history
   - birding
+:maddy:
+  :email: hello@hotmail.com
+  :interests:
+  - skiing
+  - programming
+
+# { :jammy=>{
+#    :email=>'jamy.rustenburg@gmail.com',
+#    :interests=>['woodworking', 'cooking', 'reading']},
+#   :nora=>
+#   :hiroko=>
+#}

@@ -1,21 +1,19 @@
-<!doctype html>
-<html>
+<head>
+  <title>Users</title>
+</head>
 
-  <head>
-    <title>Users</title>
-  </head>
+<body>
+  <h2>Users:</h2>
 
-  <body>
+  <div id="list-of-names">
+    <ol>
+      <% @names.each do |name| %>
+        <li>
+          <a href="<%=name%>"><%=name%></a>
+        </li>
+      <% end%>
+    </ol>
+  </div>
 
-    <div id="list-of-names">
-      <ol>
-        <% @names.each do |name| %>
-          <li>
-            <a href="<%=name%>"><%=name%></a>
-          </li>
-        <% end%>
-      </ol>
-    </div>
+</body>
 
-  </body>
-</html>
