@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Users</title>
+  </head>
+
+  <body>
+
+    <div id="list-of-names">
+      <ol>
+        <% @names.each do |name| %>
+          <li>
+            <a href="<%=name%>"><%=name%></a>
+          </li>
+        <% end%>
+      </ol>
+    </div>
+
+  </body>
+</html>

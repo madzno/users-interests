@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Jamy</title>
+  </head>
+
+  <body>
+
+    <div id="jamys-email-address">
+      <h2>Jamy's email address:</h2>
+      <p><%=@email%></p><br>
+    </div>
+
+    <div id="jamys-interests">
+      <h2> Jamy's interests:</h2>
+      <p>
+        <% @interests.each do |item|%>
+          <%=item%>
+        <%end%>
+      </p>
+    </div>
+
+  </body>
+</html>
