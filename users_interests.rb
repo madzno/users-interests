@@ -19,10 +19,10 @@ helpers do
 end
 
 get '/' do
+  redirect "/users"
+end
 
-  @names = []
-  @users.each_key { |key| @names << key }
-
+get "/users" do
   erb :home
 end
 
